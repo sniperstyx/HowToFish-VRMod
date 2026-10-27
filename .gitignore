@@ -1,0 +1,30 @@
+# Build & distribution outputs
+/build/
+/dist/
+src/**/bin/
+src/**/obj/
+*.obj
+*.pdb
+*.exp
+*.ilk
+
+# Proprietary / local game assemblies (never commit copyrighted game DLLs)
+/lib/
+
+# IDE & OS metadata
+.vs/
+.vscode/
+.idea/
+*.user
+*.suo
+Thumbs.db
+Desktop.ini
+
+# Redundant third-party archives & non-x64 / debug OpenXR SDK artifacts
+third_party/*.zip
+third_party/openxr/ARM*/
+third_party/openxr/Win32*/
+third_party/openxr/x64_uwp/
+third_party/openxr/x64/bin/api_layers/
+third_party/openxr/x64/bin/*.exe
+third_party/openxr/x64/bin/*.pdb
